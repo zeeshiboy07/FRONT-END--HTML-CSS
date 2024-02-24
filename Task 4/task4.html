@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Basic Web Page with HTML Controls and Emojis</title>
+</head>
+<body>
+  <section class="bg">
+  <div class="container">
+  <h1>Welcome to My Basic Web Page</h1>
+
+  <p>This is a simple web page demonstrating HTML controls and emojis.</p>
+
+  <!-- Text Input -->
+  <label for="name">Name:</label>
+  <input type="text" id="name" placeholder="Enter your name">
+
+  <br><br>
+
+  <!-- Checkbox -->
+  <input type="checkbox" id="agree">
+  <label for="agree">I agree to the terms and conditions</label>
+
+  <br><br>
+
+  <!-- Button -->
+  <button onclick="submitForm()">Submit</button>
+
+  <br><br>
+
+  <!-- Emoji -->
+  <p>Here's an emoji for you: 😊</p>
+</div>
+  <script>
+    function submitForm() {
+      var name = document.getElementById('name').value;
+      var agreed = document.getElementById('agree').checked;
+
+      if (agreed) {
+        alert('Thank you, ' + name + ', for agreeing to the terms and conditions!');
+      } else {
+        alert('Please agree to the terms and conditions.');
+      }
+    }
+  </script>
+  <style>
+    .container{
+      text-align: center;
+    }
+    .bg {
+  background-image: url("light-color-background-images-for-website-top-hd-images-for-free-background-for-website-in-light-color-1-1024x640.jpg");
+  height: 100vh;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+  </style>
+ </section>
+</body>
+</html>

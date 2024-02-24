@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Toyota Showroom</title>
+    
+</head>
+<body>
+    <section class="bg">
+        <h1>Welcome to the Toyota Showroom</h1>
+        <form id="searchForm" action="search_results.html" method="GET">
+            <div>
+                <input
+                    type="search"
+                    id="mySearch"
+                    name="q"
+                    placeholder="What are you looking for"
+                    size="50"
+                />
+                <button type="submit">Search</button>
+                <span class="validity"></span>
+            </div>
+        </form>
+
+        <h2>Explore your ideal Toyota</h2>
+        <h3>A Symbol of Quality, Durability and Reliability</h3>
+      
+      <details>
+<summary style="text-align: center;">   Toyota Capital Motors </summary>
+<p><b>Address:</b> Plot No. 405، 406 9th Ave <br> I-9/3 I 9/3 I-9,<b>Islmabad</b>  <br> Islamabad Capital Territory 44000 <br>
+  <b>Phone:</b> 0346 0089474</p>
+</details>
+    <script>
+        document.getElementById("searchForm").addEventListener("submit", function(event) {
+            event.preventDefault(); // Prevent the default form submission
+            var searchTerm = document.getElementById("mySearch").value.toLowerCase();
+            if (searchTerm.trim() !== "") {
+                // If the search term is not empty
+                if (searchTerm === "corolla") {
+                    // If the search term is "corolla", redirect to the Corolla page
+                    window.location.href = "corola.html";
+                } else if (searchTerm === "rush") {
+                    // If the search term is "rush", redirect to the Rush pagSe
+                    window.location.href = "rush.html" ;
+                } else {
+                    // If the search term is not "corolla" or "rush", redirect to the page indicating no results found
+                    window.location.href = "NO RESULT FOUND" + encodeURIComponent(searchTerm);
+                }
+            } else {
+                // Handle empty search term if needed
+                alert("Please enter a search term.");
+            }
+        });
+    </script>
+<style>
+    body, html {
+  height: 100%;
+  margin: 0;
+}
+
+.bg {
+  background-image: url("pngtree-futuristic-architecture-design-3d-render-featuring-a-white-concrete-floor-for-picture-image_4415057.jpg");
+  height: 100vh;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+h1 {
+
+  font-size: 30px;
+  font-weight: 300;
+  width: 100%;
+  font-style: normal;
+  text-align: center;
+
+
+}
+
+h2 {
+  color: rgb(113, 6, 137);
+  text-align: left;
+}
+
+#searchForm {
+  text-align: center;
+}
+
+#mySearch {
+  width: 400px;
+  padding: 10px;
+  font-size: 18px;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+  margin-bottom: 20px;
+  color: black;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+#mySearch::placeholder {
+  color: black;
+}
+
+#searchForm button {
+  padding: 10px 20px;
+  font-size: 18px;
+  border: none;
+  border-radius: 5px;
+  background-color: #8021a3;
+  color: white;
+  cursor: pointer;
+}
+
+#searchForm button:hover {
+  background-color: #0056b3;
+}
+
+.container {
+  text-align: center;
+}
+
+</style>
+        <footer>
+            <p>&copy; 2024 AI Wiki. All rights reserved.</p>
+        </footer>
+    </section>
+</body>
+</html>
