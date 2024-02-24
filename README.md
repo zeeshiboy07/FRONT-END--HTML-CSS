@@ -1,0 +1,1 @@
+Here's my first attempt at making a website using HTML. It's a project for my lab work. With HTML, I built the basic layout for a web page. This task is helping me learn how to create websites. I'm excited to learn more about making websites and to try out different tools and techniques to make them better.
